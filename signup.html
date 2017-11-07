@@ -6,27 +6,71 @@
     <style type="text/css">
 	    body {
 	    	background-color: lightblue;
+	    	font: 1em Helvetica;
 	    }
+	    body {
+		background-color: #cfcbbf;
+		background-image: url(/images/bg4_2.png);
+}
+
+#SignupContent {
+
+		max-width: 600px;
+		backgroud-color: white;
+		border-radius: 4px;
+}
+[type=text]{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	height:45px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	color:rgba(0,0,0,.4);
+
+}
+
+@media screen and (max-width: 600px) {
+		#SignupContent {
+				height: 100%;
+		}
+	#materialToolbar {
+		    padding: 10px;
+	}
+}
+.signup{
+	float: center;
+}
+.clearfix{
+	float:center;
+}
 	    button {
 	      background-color: #4CAF50;
 	      color: white;
 	      padding: 6px 15px;
-	      margin: 8px 0;
+	      margin: 15px 0;
 	      width: 50%;
+	      position: static;
     </style>
 </head>
 <body>
     <h2>Signup Main Page</h2>
+    <div class="signup">
     <form class="cls">
-		First name: <input type="text" name="firstname" class="fname"><br><br>
-		Last name: <input type="text" name="lastname"><br><br>
-		E-mail address: <input type="text" name="email-address"><br><br>
-		Phone number: <input type="text" name="phonenumber"><br><br>
-		Birthday: <input type="text" name="Birthday"><br><br>
-		Gender: <input type="text" name="Gender" class="gender"><br><br>
+		 <input type="text" name="firstname" placeholder="Firstname" class="fname"><br><br>
+		<input type="text" name="lastname" placeholder="Last Name"><br><br>
+		 <input type="text" name="email-address" placeholder="E-mail"><br><br>
+		 <input type="text" name="phonenumber" placeholder="phonenumber"><br><br>
+		<input type="text" name="Birthday" placeholder="Birthday"><br><br>
+		 <input type="text" name="Gender" placeholder="Gender" class="gender"><br><br>
+		</div>
 		<div class="clearfix">
 			  <button type="submit" class="signupbtn">Sign Up</button>
 		      <button type="button"  class="cancelbtn">Cancel</button>
+
 		      
 		</div>    
     </form>
