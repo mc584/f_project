@@ -71,6 +71,7 @@
 		<div class="clearfix">
 			  <button type="submit" class="signupbtn">Sign Up</button>
 		      <button type="button"  class="cancelbtn">Cancel</button>
+		      <button type="button"  class="loginbtn">login</button>
 
 		      
 		</div>    
